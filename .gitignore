@@ -1,0 +1,31 @@
+# Virtual Environment
+venv/
+
+# Django Specific
+.pytest_cache/
+**/__pycache__/
+__pycache__/
+*.pyc
+*.pyo
+db.sqlite3
+
+# Ignore Django migrations
+# **/migrations/*
+# !**/migrations/__init__.py
+
+# Environment Variables
+.env
+
+# Static and Media Files
+staticfiles/
+media/
+
+# Logs
+*.log
+
+# IDE and OS Files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
