@@ -12,11 +12,11 @@ class BaseModel(models.Model):
 class Country(BaseModel):
     name=models.CharField(max_length=255)
     official_name=models.CharField(max_length=255)
-    currencies=models.CharField(max_length=100)
     capital=models.CharField(max_length=255)
     region=models.CharField(max_length=255)
     subregion=models.CharField(max_length=255)
-    area=models.FloatField()
+    area=models.FloatField(null=True)
+    population=models.IntegerField(null=True)
     flag_url=models.URLField(blank=True, null=True)
 
     def __str__(self):
